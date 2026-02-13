@@ -16,5 +16,5 @@ message CTableIndex {
 }
 
 message CTableIndexList {
-    repeated CTableIndex table_index_list = 1; // 表索引列表
+    map<string, CTableIndex> table_index_map = 1; // 表索引字典
 }
