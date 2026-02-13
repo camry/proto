@@ -1,0 +1,10 @@
+syntax = "proto3";
+package cbpb;
+
+option go_package = "github.com/camry/pb/cbpb";
+
+import "google/protobuf/any.proto";
+
+message TableMap {
+    map<string,google.protobuf.Any> tables = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package cbpb;
+
+option go_package = "github.com/camry/pb/cbpb";
+
+message Lang {
+    string lang_name = 1;
+    map<int32,string> lang_map = 2;
+}
