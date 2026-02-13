@@ -10,11 +10,11 @@ message CTables {
     string created_at = 4; // 创建时间
 }
 
-message CTableIndex {
+message CTableHash {
     string table_name = 1; // 表名
     uint32 table_crc = 2; // 表CRC
 }
 
-message CTableIndexList {
-    map<string, CTableIndex> table_index_map = 1; // 表索引字典
+message CTableIndex {
+    map<string, CTableHash> table_hash_map = 1; // 表索引字典
 }
