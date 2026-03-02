@@ -1,7 +1,7 @@
 syntax = "proto3";
 package cbpb;
 
-option go_package = "github.com/camry/pb/cbpb";
+option go_package = "gitea.meigushi.go/meigushi/pb/cbpb";
 
 import "google/protobuf/any.proto";
 
