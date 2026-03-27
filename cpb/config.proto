@@ -1,0 +1,18 @@
+syntax = "proto3";
+package cpb;
+
+option go_package = "gitea.meigushi.go/meigushi/pb/cpb";
+
+message Config {
+    string mysql_dns = 1; // MySQL DNS
+    string mongo_uri = 2; // Mongo URI
+    RedisConfig cache = 3; // Cache Redis Config
+    RedisConfig tmp_cache = 4; // Tmp Cache Redis Config
+}
+
+message RedisConfig {
+    string addr = 1;
+    string username = 2;
+    string password = 3;
+    int32 db = 4;
+}
