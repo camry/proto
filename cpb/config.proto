@@ -4,10 +4,11 @@ package cpb;
 option go_package = "gitea.meigushi.go/meigushi/pb/cpb";
 
 message Config {
-    string mysql_dns = 1; // MySQL DNS
-    string mongo_uri = 2; // Mongo URI
-    RedisConfig cache = 3; // Cache Redis Config
-    RedisConfig tmp_cache = 4; // Tmp Cache Redis Config
+    string env = 1; // ENV
+    string mysql_dns = 2; // MySQL DNS
+    string mongo_uri = 3; // Mongo URI
+    RedisConfig cache = 4; // Cache Redis Config
+    RedisConfig tmp_cache = 5; // Tmp Cache Redis Config
 }
 
 message RedisConfig {
