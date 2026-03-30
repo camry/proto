@@ -5,12 +5,13 @@ option go_package = "gitea.meigushi.go/meigushi/pb/cpb";
 
 message Config {
     string env = 1; // ENV
-    string timezone = 2; // Timezone
-    string locale = 3; // Locale
-    string mysql_dns = 4; // MySQL DNS
-    string mongo_uri = 5; // Mongo URI
-    RedisConfig cache = 6; // Cache Redis Config
-    RedisConfig tmp_cache = 7; // Tmp Cache Redis Config
+    string name = 2; // Name
+    string timezone = 3; // Timezone
+    string locale = 4; // Locale
+    string mysql_dns = 5; // MySQL DNS
+    string mongo_uri = 6; // Mongo URI
+    RedisConfig cache = 7; // Cache Redis Config
+    RedisConfig tmp_cache = 8; // Tmp Cache Redis Config
 }
 
 message RedisConfig {
