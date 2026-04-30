@@ -9,8 +9,9 @@ message Config {
     string locale = 3; // Locale
     string mysql_dns = 4; // MySQL DNS
     string mongo_uri = 5; // Mongo URI
-    RedisConfig cache = 6; // Cache Redis Config
-    RedisConfig tmp_cache = 7; // Tmp Cache Redis Config
+    string nats_url = 6; // NATS URL
+    RedisConfig cache = 7; // Cache Redis Config
+    RedisConfig tmp_cache = 8; // Tmp Cache Redis Config
 }
 
 message RedisConfig {
