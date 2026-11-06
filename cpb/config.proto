@@ -1,7 +1,7 @@
 syntax = "proto3";
 package cpb;
 
-option go_package = "gitea.meigushi.go/meigushi/pb/cpb";
+option go_package = "github.com/camry/pb/cpb";
 
 message Config {
     string env = 1; // ENV
